@@ -97,14 +97,15 @@ function setup(){
 function draw(){
   background('white');
 
-  textSize(14);
-  fill("black");
-  text("score: " + score,width-100,20);
-  
   if(!music.isPlaying()){
     music.play();
     music.setVolume(0.3);
   }
+  
+  textSize(14);
+  fill("black");
+  text("score: " + score,width-100,20);
+ 
   if(modo === JOGAR) {
     score = score + Math.round(frameRate() / 60);
                      //ou dino.isTouching(chao)
