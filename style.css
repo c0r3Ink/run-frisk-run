@@ -6,7 +6,7 @@ html, body {
 }
 canvas {
   display: block;
-  border: 1px dashed black;
+  border: black;
   padding: 0;
   margin: auto;
   margin-top: 50px
